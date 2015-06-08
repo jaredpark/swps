@@ -1,0 +1,16 @@
+{% extends 'cms/base.html' %}
+
+{% load static %}
+{% load cms_tags %}
+
+{% block body_block %}
+<div class='myContainer'>
+	<div class='page_content'>
+		<h1>Tile Cleaning</h1>
+		<p>Text about pool tile cleaning services.</p>
+		<div class='page-bottom-contact'>
+			<a class='btn green' href='{% page_url 'contact' %}'>Get in touch</a>
+		</div>
+	</div>
+</div>
+{% endblock body_block %}

@@ -1,0 +1,43 @@
+{% extends 'cms/base.html' %}
+
+{% load static %}
+{% load cms_tags %}
+
+{% block body_block %}
+<div class='myContainer'>
+	<div class='page_content'>
+		<h1>Pool Services</h1>
+		<p>Our residential pool service experts provide comprehensive pool maintenance. You can count on our consultants to do what is necessary to keep your pool swim ready, as well as conducting inspections and reporting potential issues to prevent break-downs and surprises.</p>
+		<p>Shimmering Waters Pool Services takes the term “service” very seriously. We are a FULL service pool company. Our goal is to make your pool worry free and prevent any breakdowns or surprises. We don’t charge additional fees for what it takes to make your pool swim ready. We include it in our service.</p>
+		<h2>Services Offered</h2>
+		<div class='row'>
+			<div class='half-col col'>
+				<ul class='content_list'>
+					<li>Pool and Deck Resurfacing</li>
+					<li>Acid Washing</li>
+					<li><a href='{% page_url 'tile_cleaning' %}'>Tile Cleaning</a></li>
+					<li>Water Feature Construction</li>
+					<li><a href='{% page_url 'remodels' %}'>Full or Partial Pool Remodels</a></li>
+					<li>Pool Inspections for Home Buyers</li>
+					<li>Pool School for New Pool Owners</li>
+				</ul>
+			</div>
+			<div class='half-col col last'>
+				<ul class='content_list'>
+					<li><a href='{% page_url 'commercial' %}'>Commercial Services</a></li>
+					<li>Full and Partial Drain and refill</li>
+					<li>Startup Chemicals</li>
+					<li>Leak Diagnosis and Repair</li>
+					<li>Pumps, motors, timers, heaters, and more</li>
+					<li><a href='{% page_url 'remodels' %}'>New Pool Construction</a></li>
+					<li><a href='{% page_url 'weekly_service' %}'>Weekly Service</a></li>
+					<li><a href='{% page_url 'repair' %}'>Repairs</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class='page-bottom-contact'>
+			<a class='btn green' href='{% page_url 'contact' %}'>Get in touch</a>
+		</div>
+	</div>
+</div>
+{% endblock body_block %}

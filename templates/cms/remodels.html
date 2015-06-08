@@ -1,0 +1,16 @@
+{% extends 'cms/base.html' %}
+
+{% load static %}
+{% load cms_tags %}
+
+{% block body_block %}
+<div class='myContainer'>
+	<div class='page_content'>
+		<h1>Remodels</h1>
+		<p>Our of new pool construction and pool remodel services are all supervised by a highly skilled project Superintendent. You are always kept up to date on the status of your project and we promise minimal downtime for your pool.</p>
+		<div class='page-bottom-contact'>
+			<a class='btn green' href='{% page_url 'contact' %}'>Get in touch</a>
+		</div>
+	</div>
+</div>
+{% endblock body_block %}

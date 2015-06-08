@@ -1,0 +1,26 @@
+{% load static %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+<footer id='myFooter' class='row'>
+	<div class = 'myContainer'>
+		<div class='col one-third-col first'>
+			{# <a class='custom-logo' href="{% page_url 'home' %}"><img class='img-responsive' src="{% static logo_file_name %}" alt='{{company_name'></a> #}
+			<h1 style='margin-top: 0; color: white; font-weight: 300;'>SWPS</h1>
+			<p><a href='tel:{{company_phone_link}}'>{{ company_phone_text }}</a></p>
+			<p>{% include 'misc_pages/email.html' %}</p>
+			<div class='social_nav'>
+				{% include 'misc_pages/social_links.html' %}
+			</div>
+		</div>
+		<div id='footer-contact' class='col one-third-col'>
+			{% static_placeholder 'quick_contact' %}
+		</div>
+		<div class='col one-third-col last'>
+			<h3 class='footer-col-header'>Sitemap</h3>
+			<nav id='footer_nav'>
+				<ul style='margin-left:30px;'>{% show_menu 0 0 100 100 %}</ul>
+			</nav>
+		</div>
+	</div>
+</footer>

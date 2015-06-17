@@ -8,6 +8,7 @@
 <head>
   {% block head_block %}{% endblock %}
   <meta charset="UTF-8">
+  <meta title='{{ company_name }}'>
   <meta name="language" content="english"> 
   <meta name="google-site-verification" content="cbQRbPp2gZ8UyOBbqWGpfE7r1w4n7z15DU9xuhUrTnE" />
   <meta name="msvalidate.01" content="2CB673E3E0BC9F8E74199119AF247350" />
@@ -54,11 +55,8 @@
   //-->
   </script>
     {% include 'navbar/nav_bar.html' %}
-  <div id='base_body_wrapper'>
+  <div id='base_body_wrapper' class='{% block home_or_other %}{% endblock %}'>
     {% block body_block %}{% endblock body_block %}
-    <div style='margin:40px auto 0;'>
-      <div id='yelpwidget'></div>
-    </div>
   </div>
   {% include 'footer/footer.html' %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.js"></script>

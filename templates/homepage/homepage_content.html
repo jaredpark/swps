@@ -2,32 +2,34 @@
 {% load static %}
 
 <div id='homepage_service_section'>
-	<div class='row'>
-	</div>
-	<div class='row' style='text-align:center;'>
-		<div class='col one-third-col first'>
-			<a href='{% page_url 'about' %}'>
-				<h3>About Us</h3>
-				<img src='{% static 'images/swimmer.png' %}' alt='About Us'>
-			</a>
-			<p>Learn about why we've been trusted to care for Arizona pools for decades.</p>
-			<p><a href='{% page_url 'about' %}'>About Us</a></p>
+	<div class='myContainer'>
+		<div class='row'>
 		</div>
-		<div class='col one-third-col'>
-			<a href='{% page_url 'services' %}'>
-				<h3>Services</h3>
-				<img src='{% static 'images/wrench.png' %}' alt='Services'>
-			</a>
-			<p>Learn about all of the services we offer.</p>
-			<p><a href='{% page_url 'services' %}'>All Services</a></p>
-		</div>
-		<div class='col one-third-col last'>
-			<a href='{% page_url 'contact' %}'>
-				<h3>Contact Us</h3>
-				<img src='{% static 'images/pool.png' %}' alt='Get in Touch'>
-			</a>
-			<p>Get in touch with us today.</p>
-			<p><a href='{% page_url 'contact' %}'>Contact Us</a></p>
+		<div class='row' style='text-align:center;'>
+			<div class='col one-third-col first'>
+				<a href='{% page_url 'about' %}'>
+					<h3>About Us</h3>
+					<img src='{% static 'images/swimmer.png' %}' alt='About Us'>
+				</a>
+				<p>Find out why we've been trusted to care for thousands of pools in the West Valley.</p>
+				<p><a href='{% page_url 'about' %}'>About Us</a></p>
+			</div>
+			<div class='col one-third-col'>
+				<a href='{% page_url 'services' %}'>
+					<h3>Services</h3>
+					<img src='{% static 'images/wrench.png' %}' alt='Services'>
+				</a>
+				<p>Our experienced and reliable team is equipped to handle all of your pool needs.</p>
+				<p><a href='{% page_url 'services' %}'>All Services</a></p>
+			</div>
+			<div class='col one-third-col last'>
+				<a href='{% page_url 'contact' %}'>
+					<h3>Contact Us</h3>
+					<img src='{% static 'images/pool.png' %}' alt='Get in Touch'>
+				</a>
+				<p>Give us a call or send us a message for an immediate response to your pool needs.</p>
+				<p><a href='{% page_url 'contact' %}'>Contact Us</a></p>
+			</div>
 		</div>
 	</div>
 </div>

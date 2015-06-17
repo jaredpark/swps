@@ -14,11 +14,9 @@
         {# <a class='custom-logo' href="{% page_url 'home' %}"><img class='img-responsive' src="{% static logo_file_name %}" alt='{{company_name'></a> #}
         <h1 style='font-weight: 300;'>SWPS</h1>
       </div>
-      <div class='nav_top_row login'>
-        <a class='btn green' href='{% url "profiles_profile_detail" %}'>My Account</a>
-        {% comment %}
-        <a class='btn green white last' href='{% page_url "contact" %}'>Contact</a>
-        {% endcomment %}
+      <div class='nav_top_row call'>
+        <div><a id='call' class='btn green' href='tel:{{ company_phone_link }}'>Call Now</a></div>
+        <div id='phone'>{{ company_phone_text }}</div>
       </div>
       <div class='nav_top_row social_nav'>
         {% include 'misc_pages/social_links.html' %}

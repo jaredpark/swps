@@ -153,6 +153,7 @@ LOCAL_APPS = (
     # 'accounts',
     'homepage',
     'contact',
+    'cms_extensions',
 )
 
 INSTALLED_APPS = THIRD_PARTY_APPS + LOCAL_APPS + DEFAULT_APPS

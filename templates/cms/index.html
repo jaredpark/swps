@@ -2,11 +2,14 @@
 {% load static %}
 {% load cms_tags %}
 
+{% block home_or_other %}
+home
+{% endblock %}
+
 {% block body_block %}
-	<div class='myContainer'>
-		<div class='page_content'>
-			{% include 'homepage/homepage_image.html' %}
-			{% include 'homepage/homepage_content.html' %}
-		</div>
-	</div>
+<div style='background:white!important'>
+	{% include 'homepage/homepage_image.html' %}
+	{% include 'homepage/homepage_content_2.html' %}
+	{% include 'homepage/homepage_content.html' %}
+</div>
 {% endblock %}

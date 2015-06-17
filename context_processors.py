@@ -16,6 +16,7 @@ def site_settings_processor(request):
 		'company_fax': '',
 		'company_address': '',
 		'yelp_id': '',
+		'meta_title': 'Shimmering Waters Pool Services',
 		'meta_content': 'West Phoenix Area Pool Care Specialists.',
 		'navbar_link1_name': 'home',
 		'navbar_link1_text': 'Home',
